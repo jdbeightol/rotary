@@ -1,0 +1,12 @@
+<!--/*
+
+      This is the template for creating a new event on the events page.
+
+*/-->
+
+<div>
+  <h4>Christmas</h4>
+  <h6>When: December 25, 2014</h6>
+  <h6>Where: Lock Haven, PA</h6>
+  <p>Celebrate by spending time with families, exchanging presents, and revelling in holiday cheer!</p>
+</div>

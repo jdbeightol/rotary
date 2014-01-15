@@ -1,0 +1,89 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+body {
+  padding-bottom: 20px;
+  color: #5a5a5a;
+}
+
+/* Navbar Customization
+-------------------------------------------------- */
+.rotarynav,.rotarynav .navbar-nav>li>a,.rotarynav .navbar-brand {
+  color: #fff;
+  border-color: #001339;
+}
+
+.rotarynav .navbar-nav>li>a:hover,.rotarynav .navbar-brand:hover {
+  color:#999999;
+}
+
+.rotarynav .navbar-nav>.active>a:hover {
+  color: #999999;
+}
+
+/* Page Headers
+-------------------------------------------------- */
+.pageheader {
+  height: 250px;
+
+  padding: 10px 15px 40px;
+
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+  color: #E5E5E5;
+/*  background-color: #00246c;*/
+  background-color: #001339;
+
+  font-size: 16px;
+  text-align: center;
+}
+
+.pageheader p {
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+.pageheader h1 {
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.pageheader .container {
+  position: relative;
+}
+
+@media (min-width:768px) {
+  .pageheader {
+    height: 220px;
+    padding: 30px 15px 40px;
+
+    font-size: 21px;
+    text-align: left;
+  }
+
+  .pageheader h1 {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 992px) {
+  .pageheader h1,
+  .pageheader p {
+    margin-right: 380px;
+  }
+}
+
+/* Footers
+-------------------------------------------------- */
+.socialmedia {
+  height: 28px;
+  margin: 0 5 0 5;
+}
+
+/* Featurettes
+-------------------------------------------------- */
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
