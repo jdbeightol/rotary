@@ -1,13 +1,14 @@
 /* THE CAROUSEL
 -------------------------------------------------- */
 .carousel {
-  height: 300px;
+   height: 250px;
   margin-bottom: 15px;
   overflow: hidden;
 }
 
 .carousel .item {
-  height: 300px;
+  height: 250px;
+  height: 100%;
   background-color: #777;
   overflow: hidden;
 }
@@ -25,7 +26,7 @@
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.7);
 
-  border-radius: 8px;
+  border-radius: 4px;
 
   overflow: hidden;
 }
@@ -46,14 +47,10 @@
 
 @media (min-width: 768px) {
   .carousel {
-    height: 500px;
     margin-bottom: 60px;
   }
-
-.carousel .item {
-  height: 500px;
-  }
 }
+
 
 
 /* MARKETING CONTENT
@@ -72,7 +69,7 @@
   text-align: center;
 
   margin-bottom: 20px;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .marketing h2 {

@@ -3,7 +3,7 @@
  */
 
 $('.newslistlink').click(function() {
-  $('#newsframe').attr('src', './' + $(this).attr('id') + '.html');
+  $('#newsframe').attr('src', './content/' + $(this).attr('id') + '.html');
   $('.newsletterlink').parent().removeClass('active');
   $('.newslistlink').parent().removeClass('active');
   $(this).parent().addClass('active');

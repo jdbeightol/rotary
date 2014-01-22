@@ -10,6 +10,10 @@
   line-height: .5;
 }
 
+.calendar {
+  margin-top: 15px;
+}
+
 #calframe {
   border-width: 0;
   height: 256px;
@@ -27,7 +31,7 @@
 -------------------------------------------------- */
 .newslist {
   background-color:#f1f1f1;
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 15px 0px 15px 0px;
 }
 
