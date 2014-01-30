@@ -1,7 +1,8 @@
 /* THE CAROUSEL
 -------------------------------------------------- */
 .carousel {
-   height: 250px;
+  margin-top: 50px;
+  height: 250px;
   margin-bottom: 15px;
   overflow: hidden;
 }
@@ -50,8 +51,6 @@
     margin-bottom: 60px;
   }
 }
-
-
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
