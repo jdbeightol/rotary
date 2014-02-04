@@ -12,10 +12,10 @@ $(".newsyearlist").on("click", ".newsyear", function() {
 
 
 $(".newsyearlist").on("click", ".newsmonth", function() {
-  $('#newsframe').attr('src', './' + $(this).attr('id') + '.html');
+ //  $('#newsframe').attr('src', './' + $(this).attr('id') + '.html');
+  $('#newsletterdiv').load('./' + $(this).attr('id') + '.html');
   $('.newsmonthlist').children().removeClass('active');
   $(this).parent().addClass('active');
-  $(".newstitle").text($(this).text() + " " + $(this).parent().parent().parent().attr('id') + " Newsletters");
   return false;
 });
 
@@ -31,6 +31,7 @@ $(function() {
   var startYear = 2010;
   var currentYear = (new Date).getFullYear();
   var currentMonth = (new Date).getMonth();
+  var activeDate = startYear + "\\/jan";
 
   var genHTML = "";
 
@@ -39,10 +40,20 @@ $(function() {
 
   for(var mnt = 0; mnt < currentMonth; mnt++)
   {
-    genHTML += '<li><a href="#" class="newsmonth" id="'+currentYear+'/'+shortMonth[mnt]+'">'+longMonth[mnt]+'</a></li>';
+
+    if(fileExist("./" + currentYear + '/' + shortMonth[mnt] + '.html'))
+    {
+      genHTML += '<li><a href="#" class="newsmonth" id="'+currentYear+'/'+shortMonth[mnt]+'">'+longMonth[mnt]+'</a></li>';
+      activeDate = currentYear+'\\/'+shortMonth[mnt];
+    }
   }
 
-  genHTML += '<li class="active"><a href="#" class="newsmonth" id="'+currentYear+'/'+shortMonth[currentMonth]+'">'+longMonth[currentMonth]+'</a></li>';
+  if(fileExist("./" + currentYear + '/' + shortMonth[currentMonth] + '.html'))
+  {
+    genHTML += '<li><a href="#" class="newsmonth" id="'+currentYear+'/'+shortMonth[currentMonth]+'">'+longMonth[currentMonth]+'</a></li>';
+    activeDate = currentYear+'\\/'+shortMonth[currentMonth];
+  }
+
   genHTML += '</ul></li>';
 
   for(var year=currentYear-1; year>=startYear; year--)
@@ -52,18 +63,30 @@ $(function() {
 
     for(var mnt = 0; mnt < 12; mnt++)
     {
-      genHTML += '<li><a href="#" class="newsmonth" id="'+year+'/'+shortMonth[mnt]+'">'+longMonth[mnt]+'</a></li>';
+      if(fileExist("./" + year + '/' + shortMonth[mnt] + '.html'))
+      {
+        genHTML += '<li><a href="#" class="newsmonth" id="'+year+'/'+shortMonth[mnt]+'">'+longMonth[mnt]+'</a></li>';
+      }
     }
 
     genHTML += '</ul></li>';
   }
 
   $(".newsyearlist").append(genHTML);
-  $(".newstitle").text(longMonth[currentMonth] + " " + currentYear + " Newsletters");
-  $('#newsframe').attr('src', './' + currentYear + '/' + shortMonth[currentMonth] + '.html');
+
+  $("#" + activeDate).parent().addClass("active");
+  $('#newsletterdiv').load('./' + activeDate + '.html');
 });
 
 function setFrameHeight() {
   $('#newsframe').contents().find('body').css({"min-height": "100", "overflow" : "hidden"});
   setInterval( "$('#newsframe').height($('#newsframe').contents().find('body').height() + 20)", 1 );
+}
+
+function fileExist(url)
+{
+    var http = new XMLHttpRequest();
+    http.open('HEAD', url, false);
+    http.send();
+    return http.status!=404;
 }
