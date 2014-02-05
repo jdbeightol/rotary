@@ -1,0 +1,59 @@
+/* Rotary History
+-------------------------------------------------- */
+.rotaryhistory {
+/*  box-shadow: 10px 10px 5px #DDD;  I don't like it. */
+  border-radius: 8px;
+  margin-top: 75px;
+  overflow: hidden;
+}
+
+.historynav {
+  background-color: #001339;
+}
+
+.rotaryhistory,.historynav .active,.historynav .navbar-nav>li>a:hover,.historynav .navbar-nav>.active>a:hover {
+  background-color: #F5F5F5;
+}
+
+.historynav,.historynav .navbar-nav>li>a {
+  color: #FFFFFF;
+}
+
+.historyheading,.historytext,.historynav .navbar-nav>.active>a,.historynav .navbar-nav>.active>a:hover,.historynav .navbar-nav>li>a:hover{
+  color: #5A5A5A;
+}
+
+.historynav > h3 {
+  margin: 16px 0px 10px 25px;
+}
+
+.historynav > ul {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+#history {
+  padding: 20px 30px 20px 30px;
+  margin-bottom: 50px;
+}
+
+
+/* Featurettes
+-------------------------------------------------- */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+@media (min-width: 768px) {
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}

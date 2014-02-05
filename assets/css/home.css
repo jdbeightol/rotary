@@ -95,3 +95,39 @@
     line-height: 1.4;
   }
 }
+
+/* Event Customization
+-------------------------------------------------- */
+.eventcell {
+  margin: 50px 0px 0px 0px;
+}
+
+.newscell {
+  margin: 0px 0px 50px 0px;
+}
+
+.events {
+  padding: 15px 15px 15px;
+  border-radius: 6px;
+}
+
+.events .event h6 {
+  line-height: .5;
+}
+
+.calendar {
+  margin-top: 15px;
+}
+
+#calframe {
+  border-width: 0;
+  height: 256px;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media (min-width: 768px){
+  #calframe {
+    height: 512px;
+  }
+}

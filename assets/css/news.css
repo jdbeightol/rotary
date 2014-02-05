@@ -1,33 +1,4 @@
-/* Event Customization
--------------------------------------------------- */
-.events {
-  background-color: #f1f1f1;
-  padding: 15px 15px 15px;
-  border-radius: 6px;
-}
-
-.events .event h6 {
-  line-height: .5;
-}
-
-.calendar {
-  margin-top: 15px;
-}
-
-#calframe {
-  border-width: 0;
-  height: 256px;
-  width: 100%;
-  overflow: hidden;
-}
-
-@media (min-width: 768px){
-  #calframe {
-    height: 512px;
-  }
-}
-
-/* News Customization
+/* Newsletter Customization
 -------------------------------------------------- */
 .newslist {
   background-color:#f1f1f1;
@@ -52,17 +23,10 @@
   color: #555;
 }
 
-.newstable {
-  border-width: 0;
-}
-
-#newsframe {
-  border-width: 0;
-  height: 500px;
-  width: 100%;
-  overflow: hidden;
-}
-
 .hidden {
   display: none;
+}
+
+#newsletterdiv {
+  overflow: hidden;
 }

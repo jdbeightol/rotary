@@ -32,7 +32,6 @@ body {
   margin-bottom: 30px;
 
   color: #E5E5E5;
-/*  background-color: #00246c;*/
   background-color: #001339;
 
   font-size: 14px;
@@ -85,5 +84,5 @@ body {
 /* Featurettes
 -------------------------------------------------- */
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 80px 0;
 }

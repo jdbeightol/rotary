@@ -10,15 +10,12 @@ $(".newsyearlist").on("click", ".newsyear", function() {
   return false;
 });
 
-
 $(".newsyearlist").on("click", ".newsmonth", function() {
- //  $('#newsframe').attr('src', './' + $(this).attr('id') + '.html');
   $('#newsletterdiv').load('./' + $(this).attr('id') + '.html');
   $('.newsmonthlist').children().removeClass('active');
   $(this).parent().addClass('active');
   return false;
 });
-
 
 /*   This function generates the newsletter list */
 $(function() {
@@ -38,7 +35,7 @@ $(function() {
   genHTML += '<li class="active" id="' + currentYear + '"><a href="#" class="newsyear">' + currentYear + '</a>';
   genHTML += '<ul class="nav newsmonthlist">';
 
-  for(var mnt = 0; mnt < currentMonth; mnt++)
+  for(var mnt = 0; mnt <= currentMonth; mnt++)
   {
 
     if(fileExist("./" + currentYear + '/' + shortMonth[mnt] + '.html'))
@@ -46,12 +43,6 @@ $(function() {
       genHTML += '<li><a href="#" class="newsmonth" id="'+currentYear+'/'+shortMonth[mnt]+'">'+longMonth[mnt]+'</a></li>';
       activeDate = currentYear+'\\/'+shortMonth[mnt];
     }
-  }
-
-  if(fileExist("./" + currentYear + '/' + shortMonth[currentMonth] + '.html'))
-  {
-    genHTML += '<li><a href="#" class="newsmonth" id="'+currentYear+'/'+shortMonth[currentMonth]+'">'+longMonth[currentMonth]+'</a></li>';
-    activeDate = currentYear+'\\/'+shortMonth[currentMonth];
   }
 
   genHTML += '</ul></li>';
@@ -77,11 +68,6 @@ $(function() {
   $("#" + activeDate).parent().addClass("active");
   $('#newsletterdiv').load('./' + activeDate + '.html');
 });
-
-function setFrameHeight() {
-  $('#newsframe').contents().find('body').css({"min-height": "100", "overflow" : "hidden"});
-  setInterval( "$('#newsframe').height($('#newsframe').contents().find('body').height() + 20)", 1 );
-}
 
 function fileExist(url)
 {
