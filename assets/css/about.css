@@ -1,7 +1,6 @@
 /* Rotary History
 -------------------------------------------------- */
 .rotaryhistory {
-/*  box-shadow: 10px 10px 5px #DDD;  I don't like it. */
   border-radius: 8px;
   margin-top: 75px;
   overflow: hidden;
@@ -11,7 +10,9 @@
   background-color: #001339;
 }
 
-.rotaryhistory,.historynav .active,.historynav .navbar-nav>li>a:hover,.historynav .navbar-nav>.active>a:hover {
+.rotaryhistory,.historynav .active,
+.historynav .navbar-nav>li>a:hover,
+.historynav .navbar-nav>.active>a:hover {
   background-color: #F5F5F5;
 }
 
@@ -19,7 +20,10 @@
   color: #FFFFFF;
 }
 
-.historyheading,.historytext,.historynav .navbar-nav>.active>a,.historynav .navbar-nav>.active>a:hover,.historynav .navbar-nav>li>a:hover{
+.historyheading,.historytext,
+.historynav .navbar-nav>.active>a,
+.historynav .navbar-nav>.active>a:hover,
+.historynav .navbar-nav>li>a:hover{
   color: #5A5A5A;
 }
 
@@ -46,6 +50,8 @@
   letter-spacing: -1px;
 }
 
+/* Responsive CSS
+-------------------------------------------------- */
 @media (min-width: 768px) {
   .featurette-heading {
     font-size: 50px;

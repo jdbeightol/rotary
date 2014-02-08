@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> <!-- HEADER Information -->
+    <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
-
-        <title>Rotary of Downtown Lock Haven</title>
+        <meta name="description" content="Website of the Clinton County Rotary Clubs">
+        <meta name="author" content="Jeremy Beightol">
 
         <title>Clinton County Rotary</title>
 
@@ -43,14 +41,17 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="./"><img src="./assets/images/RotaryMoE_PMS-C.png" height="18px"/>&nbsp;Clinton County Rotary</a>
+                    <a class="navbar-brand" href="./"><img src="./assets/images/rotary_icon.png" height="18px"/>&nbsp;Clinton County Rotary</a>
                 </div>
+
                 <div class="navbar-collapse collapse" style="height: 1px;">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="./">Home</a></li>
                         <li><a href="./news/">Newsletters</a></li>
                         <li><a href="./about/">About Us</a></li>
                     </ul>
+
+                    <a class="pull-right socialmedia" href="http://www.facebook.com/pages/Rotary-Club-of-Downtown-Lock-Haven/170567572986406"><img src="./assets/images/fb_icon.png" height="30px" title="Find us on Facebook!" alt="Facebook"></a>
                 </div>
             </div>
         </div>
@@ -58,18 +59,27 @@
         <!-- Slide Show ================================================== -->
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-            <!-- Indicators. One indicator is needed for every slide. To add one,
-                 simply copy the last one, paste it at the end, and change the number. -->
+            <!--
+                Indicators. One indicator is needed for every slide. To add one,
+                simply copy the last one, paste it at the end, and change the number.
+            -->
+
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
                 <li data-target="#myCarousel" data-slide-to="3"></li>
+
+                <!-- To add a fifth slide, uncomment this indicator and the item below.
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                -->
             </ol>
 
             <div class="carousel-inner">
+
                 <!-- Slide 1-->
                 <div class="item active">
+
                     <!--Image for the first slide-->
                     <img src="./assets/slides/1.jpg" alt="Is it the TRUTH?">
                     <div class="container">
@@ -79,8 +89,11 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Slide 2-->
                 <div class="item">
+
+                    <!--Image for the second slide-->
                     <img src="./assets/slides/2.jpg" alt="Is it FAIR to all concerned?">
                     <div class="container">
                         <div class="carousel-caption overlay">
@@ -88,8 +101,11 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Slide 3-->
                 <div class="item">
+
+                    <!--Image for the first slide-->
                     <img src="./assets/slides/3.jpg" alt="Will it build GOODWILL and BETTER FRIENDSHIPS?">
                     <div class="container">
                         <div class="carousel-caption overlay">
@@ -97,8 +113,11 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Slide 4-->
                 <div class="item">
+
+                    <!--Image for the first slide-->
                     <img src="./assets/slides/4.jpg" alt="Will it be BENEFICIAL to all concerned?">
                     <div class="container">
                         <div class="carousel-caption overlay">
@@ -106,6 +125,19 @@
                         </div>
                     </div>
                 </div>
+
+
+                <!-- To add a fifth slide, uncomment this indicator and the item below.
+                <div class="item">
+
+                    <img src="./assets/slides/5.jpg" alt="Title here">
+                    <div class="container">
+                        <div class="carousel-caption overlay">
+                            <h1>Slide Title Here</h1>
+                        </div>
+                    </div>
+                </div>
+                -->
 
                 <!-- More slides can be added here by copying and pasting the above "item" div AND adding a properly numbered indicator for it -->
 
@@ -119,23 +151,11 @@
         <!-- Page Content -->
         <div class="container">
 
-            <div class="row highlights"> <!-- Projects BEGIN -->
-                <div class="col-lg-4">
+            <div class="row" id="highlights">
 
-                    <h2>Rotary Highlight 1</h2>
-                    <p>Find out more...</p>
-                </div>
+                    <!-- This content is automatically loaded from the highlights.html file. To disable this, edit assets/javascript/home.js.-->
 
-                <div class="col-lg-4">
-                    <h2>Rotary Highlight 2</h2>
-                    <p>Find out more...</p>
-                </div>
-
-                <div class="col-lg-4">
-                    <h2>Rotary Highlight 3</h2>
-                    <p>Find out more...</p>
-                </div>
-            </div> <!-- Projects END -->
+            </div>
 
             <hr class="featurette-divider">
 
@@ -152,22 +172,28 @@
 
                 </div>
             </div>
+        </div>
 
-            <hr class="featurette-divider">
+        <!-- FOOTER: Should be the same on all pages. -->
+        <footer>
+            <div class="container" id="footer">
+                <hr class="footer-divider">
 
-            <!-- FOOTER: Should be the same on all pages. -->
-
-            <footer>
-                <!-- Social Media items go here -->
-                <p>FOLLOW US: <a href="http://www.facebook.com/pages/Rotary-Club-of-Downtown-Lock-Haven/170567572986406"><img src="http://www.rotaryclintoncountypa.org/rotary-photos/FBlogo.jpg" class="socialmedia"/></a></p>
-
-                <p class="affiliate">Rotary International: <a href="https://www.rotary.org/">rotary.org</a><br>
-                <p>The Downtown Lock Haven Rotary Club, Mill Hall Sunrise Rotary Club, Rotary Club of Lock Haven, and Rotary Club of Renovo are members of <a href="http://www.district7360.org/">Rotary District 7360</a>.</p>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <p>Links</p>
+                        <ul>
+                            <li><a href="https://www.rotary.org/">Rotary International</a></li>
+                            <li><a href="http://www.district7360.org/">Rotary District 7360</a></li>
+                            <li><a href="http://www.dacdb.com/">DACdb</a></li>
+                        </ul>
+                    </div>
+                </div>
 
                 <p class="pull-right"><a href="#">Back to top</a></p>
                 <p>&copy; 2014 Rotary of Downtown Lock Haven</p>
-            </footer>
-        </div>
+            </div>
+        </footer>
 
         <!-- Core JavaScript: DO NOT EDIT ================================================== -->
         <script src="./assets/core/jquery/jquery-1.10.2.min.js"></script>

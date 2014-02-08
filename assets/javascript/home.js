@@ -1,4 +1,5 @@
 $("#myCarousel").ready(updateHeight);
+$(window).resize(updateHeight);
 
 $(function() {
   //Automatically load content for the #info div.
@@ -6,6 +7,9 @@ $(function() {
 
   //Automatically load content for the #contacts div.
   $("#contacts").load("./home/contacts.html");
+
+  //Automatically load content for the #highlights div.
+  $("#highlights").load("./home/highlights.html");
 });
 
 function updateHeight() {
