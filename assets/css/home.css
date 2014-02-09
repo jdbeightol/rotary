@@ -51,7 +51,7 @@
 .highlight {
   text-align: center;
 
-  padding: 0 45px;
+  padding: 0 25px;
 }
 
 .highlight > div {
@@ -146,5 +146,11 @@
   #calframe {
     margin: 25px 0 0 0;
     height: 512px;
+  }
+}
+
+@media (min-width: 992px) {
+  .highlight {
+    padding: 0 45px;
   }
 }
