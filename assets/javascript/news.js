@@ -64,8 +64,8 @@ $(function() {
   }
 
   $(".newsyearlist").append(genHTML);
-
   $("#" + activeDate).parent().addClass("active");
+
   $('#newsletterdiv').load('./' + activeDate + '.html');
 });
 
