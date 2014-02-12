@@ -23,6 +23,19 @@ body {
   color: #999999;
 }
 
+.rotarynav .navbar-brand > span {
+  display: none;
+}
+
+.rotarynav .navbar-brand {
+  height: 50px;
+}
+
+.rotarynav .navbar-brand > img {
+  margin-top: -5px;
+  height: 30px;
+}
+
 .socialmedia {
   display: none;
 }
@@ -84,6 +97,10 @@ body {
 /* Responsive CSS
 -------------------------------------------------- */
 @media (min-width:768px) {
+  .rotarynav .navbar-brand > span {
+    display: inline;
+  }
+
   .pageheader {
     height: 125px;
     padding: 5px 15px 20px;
@@ -104,3 +121,4 @@ body {
     margin-right: 380px;
   }
 }
+
